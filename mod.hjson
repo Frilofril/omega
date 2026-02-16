@@ -1,0 +1,21 @@
+name: "omega"
+displayName: "Omega"
+author: "Frilofril"
+description: 
+"A new planet, a new gaming experience and a great storyline are waiting for you in this mod
+Explore the planet Omega and finally get your paycheck, explore the history and secrets of what happened here, along with a difficult but balanced gameplay
+
+Available languages:
+--English
+--Українська
+--Руский
+--Español
+
+The mod is still in development, so everything can still change
+"
+version: "Pre-Demo 0.1.1/5"
+subtitle: ""
+minGameVersion: "146"
+dependencies: [ ]
+hidden: false
+hideBrowser: false
