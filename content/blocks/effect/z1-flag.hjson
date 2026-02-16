@@ -1,0 +1,15 @@
+type: Wall
+name: Flag
+description: "Increases the maximum number of units. 
+[gray]AIC: Literally the pride of ROS"
+health: 50
+size: 1
+research: w1-core
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/50
+5-crystallite/45
+],
+unitCapModifier: 1
+priority: 100
+category: units

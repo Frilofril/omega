@@ -1,0 +1,52 @@
+type: UnitFactory
+name: Basic units station
+description: "Produces units.
+[gray]AIC: Don't make fun of robots, they certainly feel pain, but death is like going to Valhalla for them"
+health: 340
+size: 3
+squareSprite: false
+research: z1-flag
+researchCostMultiplier: 0.25
+requirements: [
+1-gold/112
+4-lithium/80
+5-crystallite/180
+6-magnetite/276
+]
+consumes: {
+power: 4.5
+}
+plans: [
+	{
+	unit: 1-quark
+	requirements: [
+		5-crystallite/22
+		]
+	time: 500
+	}
+	{
+	unit: 6-vector
+	requirements: [
+		3-sulfat/12
+		5-crystallite/45
+		]
+	time: 700
+	}
+	{
+	unit: 91-warnior
+	requirements: [
+		8-sulfur/8
+		5-crystallite/44
+		]
+	time: 1000
+	}
+	{
+	unit: 96-pawn
+	requirements: [
+		7-diamond/25
+		5-crystallite/45
+		]
+	time: 700
+	}
+]
+category: units

@@ -1,0 +1,24 @@
+type: Router
+name: Large mechanical router
+description: Allocates resources
+health: 110
+size: 2
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/16
+4-lithium/8
+]
+connectedPower: false
+consumesPower: false
+speed: 0.05
+itemCapacity: 3
+category: distribution
+research: {
+parent: a5-mechanical-router
+objectives: [
+{
+type: OnSector
+preset: 3-station-desert
+}
+]
+}

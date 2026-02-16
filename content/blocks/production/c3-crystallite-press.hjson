@@ -1,0 +1,51 @@
+type: GenericCrafter
+name: Crystallite press
+description: Combines lithium and quartz into a crystalline structure through physical compression
+health: 350
+size: 3
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/252
+4-lithium/200
+]
+squareSprite: false
+hasPower: true
+hasitem: true
+hasliquids: false
+craftTime: 200
+consumes: {
+items: [
+2-quartz/5
+4-lithium/3
+]
+power: 2.5
+}
+updateEffect: pulverizeSmall 
+ambientSound: factory-patern
+ambientSoundVolume: 0.5
+itemCapacity: 10
+outputItem: 5-crystallite/4
+category: crafting
+research: {
+parent: c2-lithium-fabric
+objectives: [
+{
+type: OnSector
+preset: 2-lost-career
+}
+]
+}
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawGlowRegion
+suffix: -glow
+color: f8c166
+}
+{
+type: DrawDefault
+}
+]
+}

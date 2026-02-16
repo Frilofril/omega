@@ -1,0 +1,38 @@
+type: DroneCenter
+name: Auxiliary unit station
+description: "Creates units of type 'Post'
+[gray]AIC: After analyzing the database of the journal found at the 'Desert' station, this blueprint was found that may help you"
+health: 320
+size: 3
+squareSprite: false
+research: {
+parent: z1-flag
+objectives: [
+{
+type: SectorComplete
+preset: 3-station-desert
+}
+]
+}
+researchCostMultiplier: 0.5
+requirements: [
+1-gold/158
+5-crystallite/85
+7-diamond/40
+]
+consumes: {
+items: [
+5-crystallite/22
+7-diamond/23
+]
+}
+itemCapacity: 46
+unitsSpawned: 4
+droneType: v1-post
+statusDuration: -1
+droneConstructTime: 800
+
+configurable: false
+commandable: false
+
+category: units

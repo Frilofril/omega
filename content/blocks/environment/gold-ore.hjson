@@ -1,0 +1,8 @@
+type: OreBlock
+oreDefault: true	
+oreScale: 5
+oreThreshold: 1
+oreDefault: true
+wallOre: false
+itemDrop: 1-gold
+variants: 3

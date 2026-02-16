@@ -1,0 +1,15 @@
+type: OverflowGate
+name: Mechanical redundant gateway
+description: Passes objects forward until the front path is full, in which case it passes objects to the sides
+health: 50
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/8
+]
+connectedPower: false
+consumesPower: false
+speed: 0.05
+invert: false
+category: distribution
+research: a5-mechanical-router

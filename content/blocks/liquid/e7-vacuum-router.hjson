@@ -1,0 +1,15 @@
+type: LiquidRouter
+name: Vacuum router
+description: Distributes liquids
+health: 40
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+2-quartz/4
+]
+connectedPower: false
+consumesPower: false
+squareSprite: false
+liquidPadding: 0
+category: liquid
+research: e5-vacuum-junction

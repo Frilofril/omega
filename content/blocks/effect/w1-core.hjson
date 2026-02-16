@@ -1,0 +1,25 @@
+type: CoreBlock
+name: Rescue core
+description: The Rescue Core is the initial hub of your development, stores a small amount of resources and can create one worker drone
+health: 2800
+size: 3
+squareSprite: false
+requirements:[
+1-gold/1000
+4-lithium/1000
+]
+itemCapacity: 1000
+unitCapModifier: 0
+unitType: w1-oasis
+hasItems: true
+hasColor: true
+isFirstTier: true
+alwaysUnlocked: true
+category: effect
+
+research: {
+	planet: omega
+	name: Omega
+	root: true
+	requiresUnlock: false
+}

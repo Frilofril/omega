@@ -1,0 +1,29 @@
+type: Drill
+name: Electric drill
+description: Extracts resources from their surfaces, uses energy
+health: 325
+size: 3
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/112
+6-magnetite/90
+5-crystallite/30
+7-diamond/50
+],
+consumes: {
+power: 0.3
+liquid: { 
+liquid: 3-air-component
+amount: 0.05
+booster: true
+optional: true
+}
+},
+itemCapacity: 1
+squareSprite: false
+tier: 6
+drillTime: 155
+rotateSpeed: 4
+updateEffect: mine
+research: b2-reinforced-thermal-drill
+category: production

@@ -1,0 +1,17 @@
+type: LiquidRouter
+name: Liquid station
+description: Stores liquids, you can increase the capacity by placing them next to each other
+health: 150
+size: 2
+researchCostMultiplier: 0.25
+requirements:[
+2-quartz/38
+4-lithium/72
+]
+connectedPower: false
+consumesPower: false
+squareSprite: false
+liquidPadding: 0
+liquidCapacity: 330
+category: liquid
+research: e7-vacuum-router

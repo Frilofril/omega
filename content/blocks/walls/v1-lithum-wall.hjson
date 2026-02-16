@@ -1,0 +1,14 @@
+type: wall
+name: Lithum wall
+description: Protects from enemy bullets
+health: 300
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+4-lithium/5
+],
+squareSprite: true
+flashHit: true
+chanceDeflect: 0
+research: x1-quantum
+category: defense

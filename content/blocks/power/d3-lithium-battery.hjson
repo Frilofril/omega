@@ -1,0 +1,32 @@
+type: Battery
+name: Lithium battery
+description: Conserves energy
+health: 45
+size: 1
+squareSprite: false
+conductivePower: true
+researchCostMultiplier: 0.5
+consumes: {
+powerBuffered: 600
+}
+requirements: [
+1-gold/14
+6-magnetite/35
+4-lithium/5
+]
+category: power
+research: d1-power-tower
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawGlowRegion
+suffix: -glow
+color: ffe08f
+}
+{
+type: DrawDefault
+}
+]
+}

@@ -1,0 +1,16 @@
+name: "Captain's log"
+description: "Stores information: [gray] I am recording this entry instead of the captain, because he is currently… let’s say, unable to do so. At his initiative, we conducted an extensive study on how to obtain ethanol from biomaterial. I also had to create a censorship algorithm for the log—not because the captain says unnecessary things, but rather due to his… not universally accepted vocabulary.
+
+Thus, our spacecraft, 'Glass Eagle' was shot down upon entry into Omega’s atmosphere. We survived by means of the escape core and continued carrying out the missions that were possible in our situation, according to protocol.
+
+In a recently discovered sector, we found a destroyed air purification base where the 'enemy' had settled. The captain took control of the drones and completely eradicated that base, as if it had never existed. We rebuilt the purifiers and resumed our standard research."
+
+research: {
+parent: 7-purification-station
+objectives: [
+{
+type: SectorComplete
+preset: 7-purification-station
+}
+]
+}

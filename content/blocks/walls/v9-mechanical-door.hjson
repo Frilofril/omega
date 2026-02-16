@@ -1,0 +1,23 @@
+type: AutoDoor
+name: Mechanical door
+description: Automatically open to allow ground robots to pass through
+health: 950
+size: 2
+researchCostMultiplier: 0.5
+requirements:[
+4-lithium/25
+5-crystallite/5
+],
+squareSprite: true
+flashHit: true
+chanceDeflect: 0
+research: {
+parent: v3-crystallite-wall
+objectives: [
+{
+type: OnSector
+preset: 3-station-desert
+}
+]
+}
+category: defense

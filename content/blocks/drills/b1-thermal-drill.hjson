@@ -1,0 +1,31 @@
+type: Drill
+name: Thermal drill
+description: Extracts resources from the ore surface using a mercury-based vacuum system
+health: 150
+size: 2
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/38
+2-quartz/9
+],
+consumes: {
+liquids: [
+1-mercury/0.1
+]
+liquid: { 
+liquid: 3-air-component
+amount: 0.05
+booster: true
+optional: true
+}
+}
+liquidBoostIntensity: 1.5
+liquidCapacity: 10
+itemCapacity: 1
+squareSprite: false
+tier: 3
+drillTime: 200
+rotateSpeed: 1
+updateEffect: mineSmall
+research: e1-pneumatic-pump
+category: production

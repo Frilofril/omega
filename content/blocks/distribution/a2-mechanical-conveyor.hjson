@@ -1,0 +1,17 @@
+type: Conveyor
+name: Mechanical conveyor
+description: Transports resources
+health: 30
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/1
+]
+connectedPower: false
+consumesPower: false
+speed: 0.06
+displayedSpeed: 8.5
+junctionReplacement: a3-mechanical-junction
+bridgeReplacement: a4-mechanical-bridge
+category: distribution
+research: b1-thermal-drill

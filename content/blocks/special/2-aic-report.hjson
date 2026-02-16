@@ -1,0 +1,12 @@
+name: AIC report
+description: "I suddenly found a strange message in the database that hadn’t been there before. There was neither a sender nor a recipient, and the content of the message was encrypted in an extraterrestrial language. The syntax of this language resembles the Malizna alien language, so here is the approximate content of the message: 'Are you the last one? The last of them?'"
+
+research: {
+parent: 6-stone-deltas
+objectives: [
+{
+type: SectorComplete
+preset: 6-stone-deltas
+}
+]
+}

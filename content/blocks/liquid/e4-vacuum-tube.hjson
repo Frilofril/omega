@@ -1,0 +1,15 @@
+type: Conduit
+name: Vacuum tube
+description: Transports liquids and gases using vacuum
+health: 40
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+2-quartz/1
+]
+connectedPower: false
+consumesPower: false
+junctionReplacement: e5-vacuum-junction
+bridgeReplacement: e6-vacuum-bridge
+category: liquid
+research: e1-pneumatic-pump

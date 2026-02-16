@@ -1,0 +1,42 @@
+type: ConsumeGenerator
+name: Galvanic generator
+description: Extracts energy from a simple galvanic cell - magnetite
+health: 140
+size: 2
+squareSprite: false
+research: c4-magnetite-furnance
+researchCostMultiplier: 0.5
+requirements: [
+1-gold/48
+6-magnetite/75
+]
+hasPower: true
+hasItems: true
+outputsPower: true
+itemCapacity: 8
+consumes: {
+items: [
+6-magnetite/4
+]
+
+}
+itemDuration: 150
+powerProduction: 1.5
+category: power
+generateEffect: reactorsmoke
+ambientSound: factory-light
+ambientSoundVolume: 0.5
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawGlowRegion
+suffix: -glow
+color: f8c166
+}
+{
+type: DrawDefault
+}
+]
+}

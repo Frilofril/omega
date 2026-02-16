@@ -1,0 +1,16 @@
+type: ItemBridge
+name: Mechanical bridge
+description: Moves resources over buildings and structures in a small radius
+health: 60
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/9
+]
+connectedPower: false
+consumesPower: false
+transportTime: 0.05
+range: 3
+itemCapacity: 3
+category: distribution
+research: a5-mechanical-router

@@ -1,0 +1,26 @@
+type: GenericCrafter
+name: Lithium factory
+description: Extracts lithium sulfates and converts them into pure lithium
+health: 165
+size: 2
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/139
+]
+squareSprite: false
+hasPower: false
+hasitem: true
+hasliquids: false
+craftTime: 200
+consumes: {
+items: [
+3-sulfat/2
+]
+}
+updateEffect: smeltsmoke
+ambientSound: factory-light
+ambientSoundVolume: 0.5
+itemCapacity: 6
+outputItem: 4-lithium/3
+category: crafting
+research: c1-sulfat-fabric

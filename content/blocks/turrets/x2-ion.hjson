@@ -1,0 +1,67 @@
+type: PowerTurret
+name: Ion
+description: Shoots lightning bolts in a small radius
+health: 140
+size: 2
+research: x1-quantum
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/81
+4-lithium/85
+6-magnetite/90
+]
+itemCapacity: 1
+liquidCapacity: 1
+category: turret
+
+coolant: {
+type: ConsumeCoolant
+allowLiquid: true
+amount: 0.1
+}
+
+consumes: {
+power: 6
+}
+
+targetAir: true
+targetGround: true
+reload: 50
+range: 90
+rotateSpeed: 5
+inaccuracy: 0
+shootSound: littlyLittle
+shoot:{
+	shots: 3
+	shotDelay: 5
+	autoTarget: true 
+}
+shootEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: ParticleEffect
+	colorFrom: FFFFFF
+	colorTo: DBDBDB
+	lightColor: DBDBDB
+	sizeFrom: 1
+	sizeTo: 0
+	particles: 3
+	cone: 0
+	}
+	]
+}
+shootType: {
+	type: LightningBulletType
+	lifetime: 100
+	damage: 14
+	ammoMultiplier: 1
+	lightningLength: 12
+	lightningLengthRand: 6
+	lightningColor: FFFFFF
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: regul-
+}

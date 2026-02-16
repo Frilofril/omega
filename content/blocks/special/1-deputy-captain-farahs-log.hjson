@@ -1,0 +1,15 @@
+name: "Deputy Captain Farah's Log"
+description: "Stores information: [gray]I was told that we would safely arrive on Omega and, together with the entire 'Glass Hawk' team, explore the planet. Judging by the recent discoveries, I was sure that’s exactly how it would go — but no! Our ship was shot down while entering the atmosphere by some kind of turret we hadn’t been warned about. And that wasn’t even the worst of it — our ship crashed into that damned acid ocean, and we survived only thanks to a rescue core, which we used to land on an island.
+There are only three of us left. I have no idea where the other rescue cores are — there were more than a thousand of them, and most likely the majority fell into the acid. I understand that ROS wants to cut costs and not even install antennas in these cores — fine. But why don’t the Louisiana States care? Is human life not important to them?
+And as soon as we managed to establish contact using a beacon, we were told, 'Continue the mission'
+How is that even supposed to be understood? Hey — rescue your people!"
+
+research: {
+parent: 4-mining-laboratory
+objectives: [
+{
+type: SectorComplete
+preset: 4-mining-laboratory
+}
+]
+}

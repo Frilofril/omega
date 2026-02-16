@@ -1,0 +1,42 @@
+type: ConsumeGenerator
+name: Biogenerator
+description: Burning biomaterial into energy
+health: 75
+size: 1
+squareSprite: false
+researchCostMultiplier: 0.5
+research: d6-piezoelectric-generator
+requirements: [
+1-gold/44
+6-magnetite/11
+7-diamond/42
+]
+hasPower: true
+hasItems: true
+outputsPower: true
+itemCapacity: 6
+consumes: {
+items: [
+90-biomaterial/3
+]
+}
+itemDuration: 60
+powerProduction: 0.5
+category: power
+generateEffect: greenCloud
+//ambientSound: factory-wind
+ambientSoundVolume: 0.0
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: -glow
+color: ffffff
+}
+]
+}

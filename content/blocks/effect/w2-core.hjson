@@ -1,0 +1,31 @@
+type: CoreBlock
+name: Stationary core
+description: "The stationary core is a direct key to your progress. It can store more resources and make a better drone 
+[gray]AIC: Let the sector know who's in charge here"
+health: 4200
+size: 4
+squareSprite: false
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/1000
+4-lithium/1000
+5-crystallite/1000
+]
+itemCapacity: 3500
+unitCapModifier: 0
+unitType: w2-river
+hasItems: true
+hasColor: true
+isFirstTier: true
+alwaysUnlocked: false
+category: effect
+
+research: {
+parent: w1-core
+objectives: [
+{
+type: OnSector
+preset: 3-station-desert
+}
+]
+}

@@ -1,0 +1,20 @@
+type: PowerNode
+name: Power tower
+description: Transmits energy over short distances
+health: 30
+size: 1
+squareSprite: false
+research: d5-galvanic-generator
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/10
+6-magnetite/12
+]
+laserRange: 6
+maxNodes: 1
+autolink: True
+hasPower: true
+laserScale: 0.5
+laserColor1: ffffff
+laserColor2: de9458
+category: power

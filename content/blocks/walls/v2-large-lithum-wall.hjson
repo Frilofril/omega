@@ -1,0 +1,22 @@
+type: wall
+name: Large lithum wall
+description: Protects from enemy bullets
+health: 1050
+size: 2
+researchCostMultiplier: 0.25
+requirements:[
+4-lithium/25
+],
+squareSprite: true
+flashHit: true
+chanceDeflect: 0
+research: {
+parent: v1-lithum-wall
+objectives: [
+{
+type: OnSector
+preset: 5-ammuniton-warehouse
+}
+]
+}
+category: defense

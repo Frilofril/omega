@@ -1,0 +1,59 @@
+type: GenericCrafter
+name: Saltpeter double furnace
+description: Produces a crystalline structure from quartz, sulfur, and acid, from which, through heating, forms saltpeter
+health: 340
+size: 3
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/142
+2-quartz/110
+5-crystallite/80
+6-magnetite/90
+]
+squareSprite: false
+hasPower: true
+hasitem: true
+hasliquids: true
+craftTime: 100
+consumes: {
+liquids: [
+2-acid/0.50
+]
+items: [
+2-quartz/3
+8-sulfur/2
+]
+power: 3
+}
+updateEffect: steam  
+ambientSound: factory-wind
+ambientSoundVolume: 0.5
+itemCapacity: 6
+liquidCapacity: 10
+outputItem: 9-saltpeter/1
+category: crafting
+research: {
+parent: c4-magnetite-furnance
+objectives: [
+]
+}
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawFlame
+flameRadius: 1
+flameRadiusIn: 0.4
+flameRadiusScl: 1.5
+flameRadiusMag: 0.5
+flameRadiusInMag: 0.5
+}
+{
+type: DrawCrucibleFlame
+}
+]
+}

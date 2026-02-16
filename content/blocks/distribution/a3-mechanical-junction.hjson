@@ -1,0 +1,13 @@
+type: junction
+name: Mechanical crossing
+description: Crosses conveyors without merging them
+health: 50
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/2
+]
+connectedPower: false
+consumesPower: false
+category: distribution
+research: a2-mechanical-conveyor

@@ -1,0 +1,15 @@
+type: Router
+name: Mechanical router
+description: Allocates resources
+health: 50
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/4
+]
+connectedPower: false
+consumesPower: false
+speed: 0.05
+itemCapacity: 3
+category: distribution
+research: a3-mechanical-junction

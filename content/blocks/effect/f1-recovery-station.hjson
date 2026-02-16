@@ -1,0 +1,27 @@
+type: MendProjector
+name: Recovery station
+description: Restores damaged buildings
+health: 50
+size: 1
+research: d1-power-tower
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/40
+5-crystallite/15
+7-diamond/75
+]
+consumes: {
+power: 0.25
+liquid: {
+liquid: 3-air-component
+amount: 0.05
+booster: true
+optional: true
+}
+}
+range: 60
+phaseRangeBoost: 75
+healPercent: 1.0
+phaseBoost: 2.5
+reload: 108.5
+category: effect

@@ -1,0 +1,227 @@
+type: ItemTurret
+name: Quantum
+description: Shoots bullets at ground enemiess
+health: 90
+size: 1
+research: w1-core
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/14
+4-lithium/35
+]
+itemCapacity: 1
+liquidCapacity: 1
+category: turret
+
+coolant: {
+type: ConsumeCoolant
+allowLiquid: true
+amount: 0.1
+}
+
+targetAir: false
+targetGround: true
+reload: 100
+range: 100
+rotateSpeed: 10
+inaccuracy: 5
+shootSound: littleShoot
+shoot:{
+	shots: 1
+	shotDelay: 100
+	autoTarget: true 
+}
+shootEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: ParticleEffect
+	colorFrom: FFFFFF
+	colorTo: DBDBDB
+	lightColor: DBDBDB
+	sizeFrom: 1
+	sizeTo: 0
+	particles: 3
+	cone: 0
+	}
+	]
+}
+ammoTypes:{
+2-quartz:{
+	type: BasicBulletType
+	damage: 44
+	lifetime: 48
+	speed: 2
+	ammoMultiplier: 1.0
+
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: afd0e3
+	frontColor: 6e95aa
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: afd0e3
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 6e95aa
+		}
+		]
+	}
+	}
+3-sulfat:{
+	type: BasicBulletType
+	damage: 40
+	lifetime: 40
+	speed: 2.5
+	ammoMultiplier: 1.0
+
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: c6f6da
+	frontColor: 6dbda8
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: c6f6da
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 6dbda8
+		}
+		]
+	}
+	}
+8-sulfur:{
+	type: FlakBulletType
+	damage: 34
+	explodeRange: 15
+	splashDamage: 16
+	speed: 2
+	lifetime: 48
+	ammoMultiplier: 2.0
+	collidesGround: true
+	collidesAir: true
+
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: f2d481
+	frontColor: dba16c
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 10
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: f2d481
+		smokes: 5
+		smokeColor: dba16c
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: f2d481
+		}
+		]
+		}
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 30
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: f2d481
+		smokes: 5
+		smokeColor: dba16c
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: f2d481
+		}
+		]
+		}
+	}
+
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: regul-
+parts: [
+{
+type: RegionPart
+suffix: -recoil
+mirror: false
+under: true
+
+moveX: 0
+moveY: -1
+moveRot: 0
+
+outline: true
+progress: recoil
+heatProgress: recoil
+}
+{
+type: RegionPart
+suffix: -center
+mirror: false
+under: false
+
+moveX: 0
+moveY: -2
+moveRot: 0
+
+outline: true
+progress: warmup
+heatProgress: warmup
+}
+{
+type: RegionPart
+suffix: -rightSide
+mirror: false
+under: true
+
+moveX: 1
+moveY: -1
+moveRot: 15
+
+outline: true
+progress: warmup
+heatProgress: warmup
+}
+{
+type: RegionPart
+suffix: -leftSide
+mirror: false
+under: true
+
+moveX: -1
+moveY: -1
+moveRot: -15
+
+outline: true
+progress: warmup
+heatProgress: warmup
+}
+]
+}

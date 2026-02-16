@@ -1,0 +1,15 @@
+type: Unloader
+name: Mechanical unloader
+description: Unloads buildings specified in the sorter
+health: 70
+size: 1
+speed: 7.5
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/5
+4-lithium/9
+]
+connectedPower: false
+consumesPower: false
+category: distribution
+research: a8-small-items-station

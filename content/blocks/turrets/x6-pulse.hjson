@@ -1,0 +1,206 @@
+type: ItemTurret
+name: Pulse
+description: Shoots a burst of exploding bullets
+health: 190
+size: 2
+research: {
+parent: x4-facet
+objectives: [
+8-sulfur
+]
+}
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/84
+4-lithium/75
+5-crystallite/80
+]
+itemCapacity: 1
+liquidCapacity: 1
+category: turret
+
+coolant: {
+type: ConsumeCoolant
+allowLiquid: true
+amount: 0.1
+}
+
+targetAir: true
+targetGround: true
+reload: 170
+range: 110
+rotateSpeed: 7
+inaccuracy: 2
+shootSound: baseShoot
+shoot:{
+	shots: 4
+	shotDelay: 5
+	autoTarget: true 
+}
+shootEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: ExplosionEffect
+	waveLife: 10
+	waveStroke: 1
+	waveRadBase: 0
+	waveRad: 15
+	waveColor: FFFFFF
+	smokes: 2
+	smokeColor: DBDBDB
+	sparkLen: 1.5
+	sparkStroke: 2
+	sparkColor: FFFFFF
+	}
+	]
+}
+ammoTypes:{
+8-sulfur:{
+	type: FlakBulletType
+	damage: 21
+	explodeRange: 10
+	splashDamageRadius: 10
+	splashDamage: 10
+	scaledSplashDamage: true
+	speed: 2
+	lifetime: 50
+	ammoMultiplier: 8.0
+	collidesGround: true
+	collidesAir: true
+
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: f2d481
+	frontColor: dba16c
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 10
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: f2d481
+		smokes: 5
+		smokeColor: dba16c
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: f2d481
+		}
+		]
+		}
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 30
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: f2d481
+		smokes: 5
+		smokeColor: dba16c
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: f2d481
+		}
+		]
+		}
+	}
+9-saltpeter:{
+	type: FlakBulletType
+	damage: 24
+	explodeRange: 25
+	splashDamageRadius: 25
+	splashDamage: 12
+	scaledSplashDamage: true
+	speed: 2
+	lifetime: 50
+	ammoMultiplier: 4.0
+	reloadMultiplier: 1.15
+	collidesGround: true
+	collidesAir: true
+
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: e39257
+	frontColor: d0844d
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 10
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: e39257
+		smokes: 5
+		smokeColor: d0844d
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: e39257
+		}
+		]
+		}
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 30
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: e39257
+		smokes: 5
+		smokeColor: d0844d
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: e39257
+		}
+		]
+		}
+	}
+
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: regul-
+parts: [
+{
+type: RegionPart
+suffix: -right
+mirror: false
+under: true
+
+moveX: 1
+moveY: -1
+moveRot: 0
+
+outline: true
+progress: recoil
+heatProgress: recoil
+}
+{
+type: RegionPart
+suffix: -left
+mirror: false
+under: true
+
+moveX: -1
+moveY: -1
+moveRot: 0
+
+outline: true
+progress: recoil
+heatProgress: recoil
+}
+]
+}

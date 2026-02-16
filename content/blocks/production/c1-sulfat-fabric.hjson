@@ -1,0 +1,34 @@
+type: GenericCrafter
+name: Sulfate desiccant
+description: Decomposes acid and extracts sulfate and salt impurities from it
+health: 160
+size: 2
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/68
+2-quartz/48
+]
+squareSprite: false
+hasPower: false
+hasitem: true
+hasliquids: true
+craftTime: 100
+consumes: {
+liquids: [
+2-acid/0.5
+]
+}
+updateEffect: smeltsmoke   
+ambientSound: factory-light
+ambientSoundVolume: 0.5
+itemCapacity: 2
+liquidCapacity: 10
+outputItem: 3-sulfat/1
+category: crafting
+research: {
+parent: b1-thermal-drill
+objectives: [
+a5-mechanical-router
+e7-vacuum-router
+]
+}

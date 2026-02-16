@@ -1,0 +1,56 @@
+type: ConsumeGenerator
+name: Piezoelectric generator
+description: Using the internal energy of quartz, it extracts a small amount of energy
+health: 160
+size: 2
+squareSprite: false
+researchCostMultiplier: 0.5
+research: {
+parent: d5-galvanic-generator
+objectives: [
+{
+type: SectorComplete
+preset: 2-lost-career
+}
+]
+}
+requirements: [
+1-gold/58
+6-magnetite/60
+5-crystallite/30
+]
+hasPower: true
+hasItems: true
+outputsPower: true
+itemCapacity: 2
+consumes: {
+items: [
+2-quartz/1
+]
+}
+itemDuration: 50
+powerProduction: 1
+category: power
+generateEffect: lightningCharge
+ambientSound: factory-wind
+ambientSoundVolume: 0.5
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: -top
+layer: 53
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 30
+layer: 52
+}
+]
+}

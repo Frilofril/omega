@@ -1,0 +1,191 @@
+type: ItemTurret
+name: Form
+description: "Shoots Quark units"
+health: 95
+size: 1
+research: x4-facet
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/74
+4-lithium/25
+5-crystallite/45
+7-diamond/25
+]
+itemCapacity: 1
+liquidCapacity: 1
+category: turret
+
+coolant: {
+type: ConsumeCoolant
+allowLiquid: true
+amount: 0.1
+}
+
+targetAir: true
+targetGround: true
+reload: 140
+range: 75
+rotateSpeed: 10
+inaccuracy: 0
+shootSound: baseShoot
+shoot:{
+	firstShotDelay: 10
+	shots: 1
+	shotDelay: 140
+	autoTarget: true 
+}
+shootEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: ParticleEffect
+	colorFrom: FFFFFF
+	colorTo: DBDBDB
+	lightColor: DBDBDB
+	sizeFrom: 1
+	sizeTo: 0
+	particles: 3
+	cone: 0
+	}
+	]
+}
+ammoTypes:{
+5-crystallite:{
+	type: BasicBulletType
+	damage: 9
+	lifetime: 65
+	speed: 1
+	ammoMultiplier: 5.0
+	hitSound: littlyLittle
+	despawnSound: littlyLittle
+	delayFrags: true
+	fragSpread: 0
+	fragBullets: 1
+	fragOffsetMax: 1
+	fragVelocityMin: 1
+	fragVelocityMax: 1
+	fragRandomSpread: 0
+	fragBullet: {
+		spawnUnit: "1-quark"
+		}
+
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: ec7a7a
+	frontColor: c64949
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: ec7a7a
+		smokes: 3
+		smokeColor: c64949
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: c64949
+		}
+		]
+	}
+	}
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: regul-
+parts: [
+{
+type: RegionPart
+suffix: -right
+mirror: false
+under: false
+
+moveX: 1
+moveY: -1
+moveRot: -15
+
+outline: true
+progress: warmup
+heatProgress: recoil
+children: [
+	{
+	type: RegionPart
+	suffix: -side-right
+	mirror: false
+	under: false
+
+	moveX: 1
+	moveY: 1
+	moveRot: -5
+
+	outline: true
+	progress: warmup
+	}
+	]
+}
+{
+type: RegionPart
+suffix: -left
+mirror: false
+under: false
+
+moveX: -1
+moveY: -1
+moveRot: 10
+
+outline: true
+progress: warmup
+heatProgress: recoil
+children: [
+	{
+	type: RegionPart
+	suffix: -side-left
+	mirror: false
+	under: false
+
+	moveX: -1
+	moveY: 1
+	moveRot: 5
+
+	outline: true
+	progress: warmup
+	}
+	]
+}
+{
+type: RegionPart
+suffix: -center
+mirror: false
+under: true
+
+moveX: 0
+moveY: -1
+moveRot: 0
+
+outline: true
+progress: recoil
+heatProgress: recoil
+children: [
+	{
+	type: RegionPart
+	suffix: -side-center
+	mirror: false
+	under: true
+
+	moveX: 0
+	moveY: -2
+	moveRot: 0
+
+	outline: true
+	progress: recoil
+	}
+	]
+}
+
+]
+}

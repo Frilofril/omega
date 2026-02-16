@@ -1,0 +1,6 @@
+type: Floor
+name: quartz cristals
+itemDrop: 2-quartz
+
+attributes: {
+}

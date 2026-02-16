@@ -1,0 +1,13 @@
+type: Floor
+name: mercury
+
+speedMultiplier: 0.6
+variants: 0
+cacheLayer: tar
+drownTime: 1000
+isLiquid: true
+liquidDrop: 1-mercury
+liquidMultiplier: 1
+shallow: true
+supportsOverlay: true
+placeableOn: true

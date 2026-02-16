@@ -1,0 +1,14 @@
+type: LiquidJunction
+name: Vacuum crossing
+description: Crosses pipes without joining them
+health: 40
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+2-quartz/2
+]
+connectedPower: false
+consumesPower: false
+squareSprite: false
+category: liquid
+research: e4-vacuum-tube

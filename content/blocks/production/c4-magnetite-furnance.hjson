@@ -1,0 +1,51 @@
+type: GenericCrafter
+name: Magnetite furnance
+description: Heats gold to a magnetic metal state and produces gold magnetite from it
+health: 160
+size: 2
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/89
+2-quartz/70
+]
+squareSprite: false
+hasPower: false
+hasitem: true
+hasliquids: true
+craftTime: 150
+consumes: {
+liquids: [
+2-acid/0.75
+]
+items: [
+1-gold/1
+]
+}
+updateEffect: pulverize 
+ambientSound: factory-wind
+ambientSoundVolume: 0.5
+itemCapacity: 4
+liquidCapacity: 10
+outputItem: 6-magnetite/2
+category: crafting
+research: {
+parent: c1-sulfat-fabric
+objectives: [
+{
+type: OnSector
+preset: 2-lost-career
+}
+]
+}
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawFlame
+}
+]
+}

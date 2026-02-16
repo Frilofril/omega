@@ -1,0 +1,13 @@
+name: "Log of Team 'Lyon'"
+description: "Stores information: [gray]Entry 19:
+We found ancient caves on a remote island. We decided to establish our base here and actually found resources. The strangest thing was something else: there were many strange pits resembling trenches. We’ve been filling them in this whole time because they constantly interfered with the construction of new structures. We’re running out of crystalite again; we may have to dismantle the robots we encounter, even though that will deprive us of interesting research. Why isn’t ROS sending us supplies or at least assistance? Why is there no antenna at all in the RESCUE core? We’ll need to file a complaint"
+
+research: {
+parent: 2-lost-career
+objectives: [
+{
+type: SectorComplete
+preset: 2-lost-career
+}
+]
+}

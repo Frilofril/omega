@@ -1,0 +1,58 @@
+type: GenericCrafter
+name: Biochemical laboratory
+description: Grows simple biomaterial from organogens
+health: 140
+size: 2
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/68
+2-quartz/80
+6-magnetite/45
+7-diamond/42
+]
+squareSprite: false
+hasPower: true
+hasitem: true
+hasliquids: true
+craftTime: 50
+consumes: {
+liquids: [
+2-acid/0.25
+3-air-component/0.15
+]
+items: [
+7-diamond/5
+8-sulfur/2
+]
+power: 0.75
+}
+updateEffect: greenCloud  
+//ambientSound: factory-wind
+ambientSoundVolume: 0.0
+itemCapacity: 12
+liquidCapacity: 10
+outputItem: 90-biomaterial/12
+category: crafting
+research: {
+parent: c4-magnetite-furnance
+objectives: [
+{
+type: OnSector
+preset: 6-stone-deltas
+}
+]
+}
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: -glow
+color: ffffff
+}
+]
+}

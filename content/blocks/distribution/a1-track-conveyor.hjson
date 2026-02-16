@@ -1,0 +1,18 @@
+type: StackConveyor
+name: Track conveyor
+description: Transports resources in large piles at high speed, receives and gives resources only from the ends
+health: 60
+size: 1
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/12
+5-crystallite/4
+]
+connectedPower: false
+consumesPower: false
+recharge: 100
+itemCapacity: 100
+speed: 0.5
+baseEfficiency: 1
+category: distribution
+research: a4-mechanical-bridge

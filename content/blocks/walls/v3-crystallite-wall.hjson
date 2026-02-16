@@ -1,0 +1,22 @@
+type: wall
+name: Crystallite wall
+description: Protects from enemy bullets and repels some
+health: 260
+size: 1
+researchCostMultiplier: 0.5
+requirements:[
+5-crystallite/5
+],
+squareSprite: true
+flashHit: true
+chanceDeflect: 20
+research: {
+parent: v1-lithum-wall
+objectives: [
+{
+type: SectorComplete
+preset: 2-lost-career
+}
+]
+}
+category: defense

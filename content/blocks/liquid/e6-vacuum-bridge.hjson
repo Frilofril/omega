@@ -1,0 +1,15 @@
+type: LiquidBridge
+name: Vacuum bridge
+description: Moves liquids over buildings and structures in a small radius using vacuum
+health: 45
+size: 1
+researchCostMultiplier: 0.25
+requirements:[
+2-quartz/9
+]
+connectedPower: false
+consumesPower: false
+squareSprite: false
+range: 3
+category: liquid
+research: e7-vacuum-router

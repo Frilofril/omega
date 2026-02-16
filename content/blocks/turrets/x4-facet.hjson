@@ -1,0 +1,264 @@
+type: ItemTurret
+name: Facet
+description: "Long-range universal turret. 
+[gray]AIC: One of the developments that ROS bought from the Balkan Inventor was his favorite turret"
+health: 95
+size: 1
+research: {
+parent: x1-quantum
+objectives: [
+{
+type: OnSector
+preset: 3-station-desert
+}
+]
+}
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/54
+4-lithium/60
+5-crystallite/30
+]
+itemCapacity: 1
+liquidCapacity: 1
+category: turret
+
+coolant: {
+type: ConsumeCoolant
+allowLiquid: true
+amount: 0.1
+}
+
+targetAir: true
+targetGround: true
+reload: 60
+range: 115
+rotateSpeed: 10
+inaccuracy: 5
+shootSound: baseShoot
+shoot:{
+	shots: 3
+	shotDelay: 10
+	autoTarget: true 
+}
+shootEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: ParticleEffect
+	colorFrom: FFFFFF
+	colorTo: DBDBDB
+	lightColor: DBDBDB
+	sizeFrom: 1
+	sizeTo: 0
+	particles: 3
+	cone: 0
+	}
+	]
+}
+ammoTypes:{
+2-quartz:{
+	type: BasicBulletType
+	damage: 8
+	lifetime: 37
+	speed: 3
+	ammoMultiplier: 2.0
+	buildingDamageMultiplier: 0.9
+
+	width: 7.5
+	height: 10
+	trailEffect: missileTrail
+	trailLength: 15
+	trailColor: afd0e3
+	frontColor: 6e95aa
+	backColor: 6e95aa
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: afd0e3
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 6e95aa
+		}
+		]
+	}
+	}
+4-lithium:{
+	type: BasicBulletType
+	damage: 7
+	lifetime: 37
+	speed: 3
+	ammoMultiplier: 2.0
+	reloadMultiplier: 1.25
+	buildingDamageMultiplier: 0.9
+
+	width: 7.5
+	height: 10
+	trailEffect: missileTrail
+	trailLength: 15
+	trailColor: d9caca
+	frontColor: 977e7e
+	backColor: 977e7e
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: 977e7e
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 977e7e
+		}
+		]
+	}
+	}
+5-crystallite:{
+	type: MissileBulletType
+	damage: 9
+	lifetime: 37
+	speed: 3
+	ammoMultiplier: 2.0
+	buildingDamageMultiplier: 0.9
+
+	width: 7.5
+	height: 10
+	trailEffect: missileTrail
+	trailLength: 15
+	trailColor: ec7a7a
+	frontColor: c64949
+	backColor: c64949
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: ec7a7a
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: ec7a7a
+		}
+		]
+	}
+	}
+9-saltpeter:{
+	type: FlakBulletType
+	damage: 8
+	explodeRange: 15
+	splashDamageRadius: 15
+	splashDamage: 4
+	scaledSplashDamage: true
+	speed: 3
+	lifetime: 37
+	reloadMultiplier: 0.85
+	collidesGround: true
+	collidesAir: true
+
+	sprite: circle
+	trailEffect: missileTrail
+	trailLength: 15
+	trailColor: e39257
+	frontColor: d0844d
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 10
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: e39257
+		smokes: 5
+		smokeColor: d0844d
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: e39257
+		}
+		]
+		}
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 30
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: e39257
+		smokes: 5
+		smokeColor: d0844d
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: e39257
+		}
+		]
+		}
+	}
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: regul-
+parts: [
+{
+type: RegionPart
+suffix: -right
+mirror: false
+under: true
+
+moveX: 0
+moveY: -2
+moveRot: 0
+
+outline: true
+progress: recoil
+heatProgress: recoil
+}
+{
+type: RegionPart
+suffix: -center
+mirror: false
+under: true
+
+moveX: 0
+moveY: -1
+moveRot: 0
+
+outline: true
+progress: recoil
+heatProgress: recoil
+}
+{
+type: RegionPart
+suffix: -left
+mirror: false
+under: true
+
+moveX: 0
+moveY: -2
+moveRot: 0
+
+outline: true
+progress: recoil
+heatProgress: recoil
+}
+]
+}

@@ -1,0 +1,13 @@
+name: "Log of Team 'Lyon'"
+description: "Stores information: [gray]Entry 14:
+Our AIC named this sector Station 'Desert' It’s a strange name, but that peculiar mineral that forms around mercury looks like sand… remotely, at least, so that’s probably why. We decided to set up unit production here to automate research and resource gathering, but for some reason, out of the entire list of robots, all of them were combat or even military units—there wasn’t a single research or even cargo unit. That’s odd. We were told we’re a research group, so why are there so many military technologies in the database?"
+
+research: {
+parent: 3-station-desert
+objectives: [
+{
+type: SectorComplete
+preset: 3-station-desert
+}
+]
+}

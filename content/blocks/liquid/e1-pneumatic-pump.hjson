@@ -1,0 +1,16 @@
+type: Pump
+name: Pneumatic pump
+description: Pumps liquid from its surface
+health: 50
+size: 1
+squareSprite: false
+researchCostMultiplier: 0.25
+requirements:[
+2-quartz/22
+]
+pumpAmount: 0.155
+consumeTime: 0
+warmupSpeed: 0.02
+liquidCapacity: 10
+category: liquid
+research: w1-core

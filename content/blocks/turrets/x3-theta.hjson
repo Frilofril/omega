@@ -1,0 +1,132 @@
+type: liquidTurret
+name: Theta
+description: The long-range turret fires a barrage of bullets at flying enemies
+health: 80
+size: 1
+research: {
+parent: x1-quantum
+objectives: [
+{
+type: SectorComplete
+preset: 2-lost-career
+}
+]
+}
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/84
+2-quartz/70
+4-lithium/85
+]
+itemCapacity: 1
+liquidCapacity: 10
+category: turret
+
+targetAir: true
+targetGround: false
+reload: 30
+range: 140
+rotateSpeed: 10
+inaccuracy: 3
+shootSound: littleEho
+shoot:{
+	shots: 1
+	shotDelay: 30
+	autoTarget: true 
+}
+ammoTypes:{ 
+1-mercury:{
+	type: LiquidBulletType
+	liquid: 1-mercury
+	damage: 17
+	lifeTime: 100
+	speed: 5
+	knockback: 0.0
+
+	hitColor: c6c6ae
+	trailColor: fffffb
+	hitSize: 15
+	drawSize: 150
+	trailLength: 25
+}
+2-acid:{
+	type: LiquidBulletType
+	liquid: 2-acid
+	damage: 0
+	lifeTime: 100
+	speed: 5
+	knockback: 2.0
+	reloadMultiplier: 2.0
+
+	hitColor: 0cb392
+	trailColor: 80ffbf
+	hitSize: 15
+	drawSize: 150
+	trailLength: 25
+}
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: regul-
+parts: [
+{
+type: RegionPart
+suffix: -right
+mirror: false
+under: false
+
+moveX: 1
+moveY: -1
+moveRot: -25
+
+outline: true
+progress: warmup
+heatProgress: warmup
+children: [
+	{
+	type: RegionPart
+	suffix: -blade-right
+	mirror: false
+	under: true
+
+	moveX: 0
+	moveY: 1
+	moveRot: 25
+
+	outline: true
+	progress: warmup
+	}
+]
+}
+{
+type: RegionPart
+suffix: -left
+mirror: false
+under: false
+
+moveX: -1
+moveY: -1
+moveRot: 25
+
+outline: true
+progress: warmup
+heatProgress: warmup
+children: [
+	{
+	type: RegionPart
+	suffix: -blade-left
+	mirror: false
+	under: true
+
+	moveX: 0
+	moveY: 1
+	moveRot: -25
+
+	outline: true
+	progress: warmup
+	}
+]
+}
+]
+}

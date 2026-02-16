@@ -1,0 +1,17 @@
+type: Pump
+name: Reinforced pneumatic pump
+description: Pumps liquid from its surface
+health: 120
+size: 2
+squareSprite: false
+researchCostMultiplier: 0.5
+requirements:[
+2-quartz/48
+5-crystallite/21
+]
+pumpAmount: 0.155
+consumeTime: 0.5
+warmupSpeed: 0.075
+liquidCapacity: 10
+category: liquid
+research: e1-pneumatic-pump

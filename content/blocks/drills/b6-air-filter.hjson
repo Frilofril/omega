@@ -1,0 +1,49 @@
+type: GenericCrafter
+name: Air filter
+description: Purifies the planet's air, leaving only the air component
+health: 120
+size: 2
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/80
+2-quartz/50
+6-magnetite/30
+5-crystallite/25
+7-diamond/25
+]
+squareSprite: false
+hasPower: false
+hasitem: true
+hasliquids: true
+craftTime: 50
+consumes: {
+power:0.5
+}
+updateEffect: smokeCloud 
+ambientSound: factory-wind
+ambientSoundVolume: 0.5
+ignoreLiquidFullness: true
+liquidCapacity: 12
+outputLiquid: 3-air-component/0.2
+category: production
+research: b2-reinforced-thermal-drill
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: -top
+layer: 53
+}
+{
+type: DrawRegion
+suffix: -rotator
+rotateSpeed: 30
+layer: 52
+}
+]
+}

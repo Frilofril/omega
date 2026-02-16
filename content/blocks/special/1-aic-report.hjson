@@ -1,0 +1,23 @@
+name: AIC report
+description: "Stores information: [gray]Greetings. You have made an emergency landing on the surface of planet Omega. I am your assistant, the Artificial Intelligence of the Core (AIC), created by ROS to assist you with your mission.
+Core and remote systems status report:
+
+Rescue Core hull integrity: 100%
+Internal energy reserves: 60%
+Core planetary thruster integrity: 98%
+Thruster fuel: 70%
+Life support systems integrity: 100%
+Communications: Unavailable (Beacon required!)
+
+Despite the situation, your primary objective remains unchanged — (Information redacted!) exploration of planet Omega. The secondary objectives of your ship are unknown (Beacon required!).
+And remember, for outstanding performance you will receive a salary increase. Your next payment is schedul - (Connection Unavailable!)"
+research: {
+parent: 1-first-divertion
+
+objectives: [
+{
+type: OnSector
+preset: 1-first-divertion
+}
+]
+}

@@ -1,0 +1,31 @@
+type: Drill
+name: Reinforced thermal drill
+description: Extracts resources from the ore surface using a mercury-based vacuum system
+health: 175
+size: 2
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/58
+2-quartz/25
+5-crystallite/20
+],
+consumes: {
+liquids: [
+1-mercury/0.05
+]
+liquid: { 
+liquid: 3-air-component
+amount: 0.05
+booster: true
+optional: true
+}
+}
+liquidCapacity: 10
+itemCapacity: 1
+squareSprite: false
+tier: 5
+drillTime: 175
+rotateSpeed: 2
+updateEffect: mineSmall
+research: b1-thermal-drill
+category: production

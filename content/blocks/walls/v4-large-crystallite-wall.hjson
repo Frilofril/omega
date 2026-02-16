@@ -1,0 +1,22 @@
+type: wall
+name: Large crystallite wall
+description: Protects from enemy bullets and repels some
+health: 960
+size: 2
+researchCostMultiplier: 0.5
+requirements:[
+5-crystallite/25
+],
+squareSprite: true
+flashHit: true
+chanceDeflect: 25
+research: {
+parent: v3-crystallite-wall
+objectives: [
+{
+type: OnSector
+preset: 5-ammuniton-warehouse
+}
+]
+}
+category: defense
