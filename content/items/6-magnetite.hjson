@@ -1,0 +1,13 @@
+type: item
+name: Magnetite
+description: A simple metal with high magnetic properties and galvanic potential, used for electronics
+color: d0cc92
+hardness: 2
+cost: 1
+charge: 0.15
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 1-gold
+

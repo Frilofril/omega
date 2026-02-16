@@ -1,0 +1,13 @@
+type: item
+name: Diamond
+description: "A super-strong material, made primarily of carbon, making it a good material for drills and in the bioindustry. 
+[gray]AIC: Diamonds! It's amazing that rare earth materials are quite common on this planet, although this can be explained by the unusual oceans"
+color: c6bae0
+hardness: 5
+cost: 1
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 2-quartz
+

@@ -1,0 +1,11 @@
+type: Liquid
+name: Air component
+description: A mixture of gases. Nitrogen, oxygen, and hydrogen are concentrated as much as possible, but with remnants of the planet's atmosphere
+color: ceeef2
+gas: true
+viscosity: 0.0
+temperature: 0.45
+coolant: false
+heatCapacity: 0.0
+alwaysUnlocked: false
+research: 7-diamond

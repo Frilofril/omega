@@ -1,0 +1,13 @@
+type: item
+name: Lithium
+description: "A strong metal that can be used for armor or turret fire protection. 
+[gray]AIC: Be careful, in its pure form it reacts very strongly with acid"
+color: d9caca
+hardness: 2
+cost: 2
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 3-sulfat
+

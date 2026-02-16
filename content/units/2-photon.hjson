@@ -1,0 +1,93 @@
+type: mech
+name: Photon
+description: Small robot with higher rate of fire
+health: 180
+speed: 0.8
+hitSize: 10
+flying: false
+faceTarget: true
+//research: 1-quark
+researchCostMultiplier: 10
+weapons: [{
+x: 0
+y: 2.5
+rotate: false
+mirror: false
+inaccuracy: 5
+reload: 50
+shootSound: littleShoot
+ejectEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: ParticleEffect
+	colorFrom: ffa665
+	colorTo: 665c9f
+	lightColor: d06b53
+	sizeFrom: 1
+	sizeTo: 0
+	particles: 3
+	cone: 0
+	}
+	]
+	}
+shoot: {
+	shots: 2
+	shotDelay: 15
+	autoTarget: true
+	}
+bullet:{ 
+	type: BasicBulletType
+	damage: 11
+	speed: 2.5
+	buildingDamageMultiplier: 1.2
+
+	width: 3.75
+	height: 7
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: ffa665
+	frontColor: d06b53
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: d06b53
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: d06b53
+		}
+		]
+	}
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: d06b53
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: d06b53
+		}
+		]
+	}
+} 
+}
+]
+abilities: [
+	]
+
+immunities: [
+	]

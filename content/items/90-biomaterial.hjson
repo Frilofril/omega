@@ -1,0 +1,12 @@
+type: item
+name: Biomaterial
+description: Simple biomaterial made from organogens is the basis for growing and synthesizing resources in bioindustry
+color: c5ed81
+hardness: 1
+cost: 1
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 7-diamond
+

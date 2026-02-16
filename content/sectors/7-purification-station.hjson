@@ -1,0 +1,19 @@
+captureWave: 25
+difficulty: 6
+alwaysUnlocked: false
+planet: omega
+sector: 32
+
+research: {
+parent: 4-mining-laboratory
+objectives: [
+{
+type: SectorComplete
+preset: 4-mining-laboratory
+}
+{
+type: SectorComplete
+preset: 5-ammuniton-warehouse
+}
+]
+}

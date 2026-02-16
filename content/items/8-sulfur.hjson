@@ -1,0 +1,13 @@
+type: item
+name: Sulfur
+description: A flammable mineral, although there is nothing to fear in this atmosphere, it will not catch fire, but it can explode quite well
+color: e9b56e
+hardness: 5
+explosiveness: 0.5
+cost: 1
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 2-quartz
+

@@ -1,0 +1,12 @@
+type: Liquid
+name: Acid
+description: The slightly concentrated sulfuric acid that covers the surface of the planet Omega can be used as a cooling element, or to extract sulfates or salts from it
+color: 24d9a3
+gas: false
+temperature: 0.40
+explosiveness: 0
+viscosity: 0.50
+coolant: true
+heatCapacity: 0.5
+alwaysUnlocked: false
+research: 1-mercury

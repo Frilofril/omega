@@ -1,0 +1,12 @@
+type: Liquid
+name: Mercury
+description: Liquid metal used to create a vacuum and as a heat carrier in complex reactions
+color: e3e3d7
+gas: false
+temperature: 0.10
+explosiveness: 0
+viscosity: 0.70
+coolant: false
+heatCapacity: 0.40
+alwaysUnlocked: false
+research: 2-quartz

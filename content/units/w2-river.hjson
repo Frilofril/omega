@@ -1,0 +1,56 @@
+type: flying
+name: River
+description: A small flying drone that better mines, builds, and stores resources
+health: 195
+speed: 3.5
+accel: 1
+drag: 0.15
+rotateSpeed: 20
+flying: true
+faceTarget: true
+hitSize: 10
+buildSpeed: 15
+mineTier: 3
+mineSpeed: 30
+coreUnitDock: true
+engineSize: 1.75
+itemCapacity: 100
+
+parts: [
+	{
+	type: HoverPart
+	x: 3
+	y: -3
+	mirror: true
+	radius: 3.5
+	phase: 180
+	stroke: 1
+	layerOffset: -1
+	color: FFD37F 
+	}
+	{
+	type: HoverPart
+	x: 0
+	y: -5
+	mirror: false
+	radius: 3.5
+	phase: 180
+	stroke: 1
+	layerOffset: -1
+	color: FFD37F 
+	}
+]
+
+alwaysUnlocked: false
+
+abilities: [ 
+	{
+	type: RepairFieldAbility
+	amount: 4
+	reload: 100
+	range: 55
+	}
+]
+
+immunities: [
+	]

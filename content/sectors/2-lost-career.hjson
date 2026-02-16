@@ -1,0 +1,15 @@
+//captureWave: 0
+difficulty: 1
+alwaysUnlocked: false
+planet: omega
+sector: 37
+
+research: {
+parent: 1-first-divertion
+objectives: [
+{
+type: SectorComplete
+preset: 1-first-divertion
+}
+]
+}

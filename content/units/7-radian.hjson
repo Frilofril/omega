@@ -1,0 +1,134 @@
+type: legs
+name: Radian
+description: Shoots homing bullets that fire other homing bullets, requires manual control to fully unleash the unit's power
+health: 217
+speed: 0.55
+hitSize: 10
+flying: false
+faceTarget: true
+legCount: 8
+legLength: 15
+//research: 6-vector
+researchCostMultiplier: 10
+weapons: [{
+x: 0
+y: 1
+rotate: false
+mirror: false
+inaccuracy: 2
+reload: 100
+shootSound: littleEho
+shoot: {
+	shots: 1
+	shotDelay: 0
+	autoTarget: true
+	}
+bullet:{ 
+	type: MissileBulletType
+	damage: 13
+	speed: 2
+	lifeTime: 800
+	buildingDamageMultiplier: 0.9
+
+	bulletInterval: 25
+	intervalBullets: 2
+	intervalRandomSpread: 0
+	intervalSpread: 60
+	intervalAngle: 180
+	intervalBullet: {
+		type: MissileBulletType
+		damage: 13
+		speed: 2.5
+		lifeTime: 1600
+		buildingDamageMultiplier: 0.9
+
+		width: 7.5
+		height: 10
+		trailEffect: missileTrail
+		trailLength: 15
+		trailColor: 65ceff
+		frontColor: 5fb9e3
+		backColor: 5fb9e3
+		hitEffect: {
+			type: MultiEffect
+			effects:[
+			{
+			type: ExplosionEffect
+			waveLife: 12
+			waveStroke: 1
+			waveRadBase: 0
+			waveRad: 5
+			waveColor: 5fb9e3
+			smokes: 0
+			sparkLen: 1.5
+			sparkStroke: 2
+			sparkColor: 5fb9e3
+			}
+			]
+			}
+		despawnEffect: {
+			type: MultiEffect
+			effects:[
+			{
+			type: ExplosionEffect
+			waveLife: 12
+			waveStroke: 1
+			waveRadBase: 0
+			waveRad: 5
+			waveColor: 5fb9e3
+			smokes: 0
+			sparkLen: 1.5
+			sparkStroke: 2
+			sparkColor: 5fb9e3
+			}
+			]
+			}
+		}
+
+	trailEffect: missileTrail
+	trailLength: 15
+	trailColor: 65ceff
+	frontColor: 5fb9e3
+	backColor: 5fb9e3
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: 5fb9e3
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 5fb9e3
+		}
+		]
+	}
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: 5fb9e3
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 5fb9e3
+		}
+		]
+	}
+} 
+}
+]
+abilities: [
+	]
+
+immunities: [
+	]

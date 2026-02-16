@@ -1,0 +1,15 @@
+//captureWave: 0
+difficulty: 4
+alwaysUnlocked: false
+planet: omega
+sector: 34
+
+research: {
+parent: 3-station-desert
+objectives: [
+{
+type: SectorComplete
+preset: 3-station-desert
+}
+]
+}

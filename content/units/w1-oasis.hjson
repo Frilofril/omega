@@ -1,0 +1,45 @@
+type: flying
+name: Oasis
+description: A small drone that does not protect the rescue core but is an assistant for mining and construction
+health: 150
+speed: 3
+accel: 1
+drag: 0.15
+rotateSpeed: 20
+flying: true
+faceTarget: true
+hitSize: 10
+buildSpeed: 10
+mineTier: 3
+mineSpeed: 25
+coreUnitDock: true
+engineSize: 1.75
+itemCapacity: 50
+
+parts: [
+	{
+	type: HoverPart
+	x: 2.5
+	y: -2.5
+	mirror: true
+	radius: 3.5
+	phase: 180
+	stroke: 1
+	layerOffset: -1
+	color: FFD37F 
+	}
+]
+
+alwaysUnlocked: true
+
+abilities: [ 
+	{
+	type: RepairFieldAbility
+	amount: 2
+	reload: 100
+	range: 55
+	}
+]
+
+immunities: [
+	]

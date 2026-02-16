@@ -1,0 +1,13 @@
+type: item
+name: Sulfat
+description: A mixture of sulfates and salts that can be used as a solid acid or to extract individual pure sulfates from it
+color: 9cd9bc
+hardness: 2
+cost: 0
+charge: 0.09
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 2-quartz
+

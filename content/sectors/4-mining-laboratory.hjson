@@ -1,0 +1,15 @@
+//captureWave: 0
+difficulty: 4
+alwaysUnlocked: false
+planet: omega
+sector: 36
+
+research: {
+parent: 2-lost-career
+objectives: [
+{
+type: SectorComplete
+preset: 2-lost-career
+}
+]
+}

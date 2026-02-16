@@ -1,0 +1,49 @@
+type: flying
+name: Pawn
+description: Flying drone that shoots lightning bolts
+health: 105
+speed: 1
+accel: 1
+drag: 0.15
+hitSize: 5
+rotateSpeed: 5
+flying: true
+faceTarget: true
+engineSize: 1.75
+research: {
+parent: z2-basic-station-units
+objectives: [
+7-diamond
+]
+}
+researchCostMultiplier: 10
+weapons: [ {
+x: 0
+y: 0
+rotate: false
+mirror: false
+inaccuracy: 0
+reload: 80
+shootSound: littlyLittle
+shootStatus: unmoving
+shootStatusDuration: 20
+shoot: {
+	shots: 2
+	shotDelay: 10
+	autoTarget: true
+	}
+bullet: { 
+	type: LightningBulletType
+	damage: 14
+	lightningLength: 6
+	lightningLengthRand: 5
+	lightningColor: bf92f9
+}
+}
+]
+
+abilities: [
+	]
+
+immunities: [
+	]

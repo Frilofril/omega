@@ -1,0 +1,105 @@
+type: flying
+name: Bishop
+description: A drone that fires a powerful barrage of lasers and has a shield in front of it
+health: 331
+speed: 0.75
+accel: 1
+drag: 0.15
+hitSize: 15
+rotateSpeed: 3
+flying: true
+faceTarget: true
+//research: 97-knight
+researchCostMultiplier: 10
+
+engineOffset: 8
+engineSize: 3
+engines: [
+	{
+	x: 5.5
+	y: -6.5
+	rotation: -45
+	radius: 2.5
+	}
+	{
+	x: -5.5
+	y: -6.5
+	rotation: 245
+	radius: 2.5
+	}
+]
+
+
+weapons: [ {
+x: 0
+y: 0
+rotate: false
+mirror: false
+inaccuracy: 0
+reload: 110
+shootSound: starShoot
+shootStatus: unmoving
+shootStatusDuration: 25
+chargeSound: starCharge
+shoot: {
+	firstShotDelay: 25
+	shots: 5
+	shotDelay: 5
+	autoTarget: true
+	}
+bullet: { 
+	type: ShrapnelBulletType
+	damage: 11
+	lifeTime: 500
+	fromColor: bf92f9
+	colorTo: 665c9f
+	serrations: 5
+	length: 120
+	width: 15
+	hitLarge: true
+	pierceBuilding: true
+
+chargeEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: WaveEffect
+	colorFrom: bf92f9
+	colorTo: 665c9f
+	sizeFrom: 5
+	sizeTo: 0
+	layer: 150
+	lifetime: 20
+	}
+	{
+	type: WaveEffect
+	colorFrom: bf92f9
+	colorTo: 665c9f
+	sizeFrom: 5
+	sizeTo: 0
+	layer: 150
+	sides: 6
+	lifetime: 20
+	}
+	]
+	}
+	}
+}
+]
+
+abilities: [
+{
+type: ShieldArcAbility
+radius: 30
+width: 4
+regen: 0.075
+max: 105
+cooldown: 800
+angle: 180
+whenShooting: false
+chanceDeflect: 0
+}
+	]
+
+immunities: [
+	]

@@ -1,0 +1,12 @@
+type: item
+name: Gold
+description: A precious metal made even more precious in the conditions of the planet Omega because acid does not react with it, making it an ideal material for construction and the initial development of electronics
+color: e7ec85
+hardness: 2
+cost: 1
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: w1-core
+

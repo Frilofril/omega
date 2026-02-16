@@ -1,0 +1,88 @@
+type: mech
+name: Legionary
+description: Based on the Photon unit, shoots explosive bullets
+health: 173
+speed: 1.45
+hitSize: 10
+flying: false
+faceTarget: true
+//research: 91-warnior
+researchCostMultiplier: 10
+weapons: [ {
+name: "92-legionary-weapon"
+x: 4.5
+y: 0
+rotate: false
+mirror: true
+inaccuracy: 5
+reload: 120
+shootSound: baseShoot
+shootOnDeath: true
+shoot: {
+	shots: 2
+	shotDelay: 0
+	autoTarget: true
+	}
+bullet: { 
+	type: FlakBulletType
+	damage: 12
+	explodeRange: 20
+	splashDamageRadius: 20
+	splashDamage: 6
+	scaledSplashDamage: true
+	speed: 3
+	lifetime: 20
+	buildingDamageMultiplier: 1.5
+	collidesGround: true
+	collidesAir: true
+
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: ff6565
+	frontColor: e35f5f
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 10
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: e35f5f
+		smokes: 5
+		smokeColor: e35f5f
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: ff6565
+		}
+		]
+		}
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 30
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 15
+		waveColor: e35f5f
+		smokes: 5
+		smokeColor: e35f5f
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: ff6565
+		}
+		]
+		}
+	} 
+}
+]
+
+abilities: [
+	]
+
+immunities: [
+	]

@@ -1,0 +1,103 @@
+type: flying
+name: Post
+description: "A support drone that can repair buildings and assist in construction. 
+[gray]AIC: A special drone created by the 'Lyon' team"
+health: 110
+speed: 3.5
+accel: 1
+drag: 0.15
+rotateSpeed: 20
+flying: true
+faceTarget: true
+hitSize: 5
+buildSpeed: 5
+research: z7-auxiliary-unit-station
+researchCost: [ ]
+
+weapons: [ {
+x: 0
+y: 1
+rotate: false
+mirror: false
+inaccuracy: 0
+reload: 50
+shootSound: littleBlastShoot
+ejectEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: ParticleEffect
+	colorFrom: 84f490
+	colorTo: 62ae7e
+	lightColor: 84f490
+	sizeFrom: 1
+	sizeTo: 0
+	particles: 3
+	cone: 0
+	}
+	]
+	}
+shoot: {
+	shots: 2
+	shotDelay: 20
+	}
+bullet:{ 
+	type: BasicBulletType
+	damage: 8
+	speed: 2.5
+	lifeTime: 60
+	healPercent: 2
+	buildingDamageMultiplier: 0.5
+	collidesTeam: true
+	hittable: false
+
+	width: 3.75
+	height: 7
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: 84f490
+	frontColor: 62ae7e
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: 84f490
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 84f490
+		}
+		]
+	}
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: 84f490
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 84f490
+		}
+		]
+	}
+} 
+}
+]
+
+abilities: [ 
+]
+
+immunities: [
+	]

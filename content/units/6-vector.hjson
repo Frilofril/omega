@@ -1,0 +1,83 @@
+type: legs
+name: Vector
+description: "A small mech that can move over buildings and shoots homing bullets. 
+[gray]AIC: The technology of the Balkan Inventor, he said it was far from a perfect mech that he could custom-make"
+health: 145
+speed: 0.65
+hitSize: 5
+flying: false
+faceTarget: true
+legCount: 6
+legLength: 10
+research: z2-basic-station-units
+researchCostMultiplier: 10
+weapons: [{
+x: 0
+y: 1
+rotate: false
+mirror: false
+inaccuracy: 0
+reload: 150
+shootSound: littleShoot
+shoot: {
+	shots: 1
+	shotDelay: 0
+	autoTarget: true
+	}
+bullet:{ 
+	type: MissileBulletType
+	damage: 45
+	speed: 1.5
+	lifeTime: 400
+	recoil: 0.2
+	buildingDamageMultiplier: 0.9
+
+	width: 7.5
+	height: 10
+	trailEffect: missileTrail
+	trailLength: 15
+	trailColor: 65ceff
+	frontColor: 5fb9e3
+	backColor: 5fb9e3
+	hitEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: 5fb9e3
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 5fb9e3
+		}
+		]
+	}
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+		{
+		type: ExplosionEffect
+		waveLife: 12
+		waveStroke: 1
+		waveRadBase: 0
+		waveRad: 5
+		waveColor: 5fb9e3
+		smokes: 0
+		sparkLen: 1.5
+		sparkStroke: 2
+		sparkColor: 5fb9e3
+		}
+		]
+	}
+} 
+}
+]
+abilities: [
+	]
+
+immunities: [
+	]

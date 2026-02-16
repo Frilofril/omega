@@ -1,0 +1,15 @@
+//captureWave: 0
+difficulty: 4
+alwaysUnlocked: false
+planet: omega
+sector: 33
+
+research: {
+parent: 5-ammuniton-warehouse
+objectives: [
+{
+type: SectorComplete
+preset: 5-ammuniton-warehouse
+}
+]
+}

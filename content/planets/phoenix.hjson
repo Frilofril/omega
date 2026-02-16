@@ -1,0 +1,101 @@
+generator: PlanetGenerator
+solarSystem: sun
+parent: omega
+icon: planet
+iconColor: b7aa8c
+atmosphereColor: 626149
+
+itemWhitelist: [
+1-gold
+2-quartz
+3-sulfat
+4-lithium
+5-crystallite
+6-magnetite
+7-diamond
+8-sulfur
+9-saltpeter
+]
+
+hiddenItems: [
+copper
+lead
+scrap
+graphite
+coal
+titanium
+thorium
+silicon
+plastanium
+phase-fabric
+sand
+surge-alloy
+spore-pod
+blast-compound
+pyratite
+metaglass
+beryllium
+oxide
+tungsten
+carbide
+fissile-matter
+dormant-cyst
+]
+
+defaultCore: w1-core
+
+landCloudColor: b7aa8c
+orbitRadius: 4
+sectorSize: 1
+startSector: 1
+orbitSpacing: 1
+radius: 0.5
+minZoom: 0.8
+drawOrbit: true
+atmosphereRadIn: 0
+atmosphereRadOut: 0.3
+accessible: true
+updateLighting: false
+sectorSeed: 14513
+bloom: false
+visible: true
+hasAtmosphere: true
+allowWaveSimulation: true
+prebuildBase: true
+alwaysUnlocked: false
+clearSectorOnLose: true
+allowLaunchSchematics: false
+allowLaunchLoadout: false
+allowLaunchToNumbered: false   
+
+
+cloudMesh: [
+	{
+	type: HexSkyMesh
+	planet: omega
+	seed: 5233
+	speed: 3
+	radius: 0.15
+	divisions: 2.5
+	color: b7aa8c
+	octaves: 3
+	persistence: 0.15
+	scl: 0.715
+	thresh: 0.33
+	}
+]
+mesh: [
+	{
+	type: NoiseMesh
+	planet: omega
+	seed: 654
+	color1: 7b7b6a
+	color2: 8e8a6a
+	divisions: 2.5
+	radius: 0.5
+	octaves: 2
+	persistence: 0.25
+	scl: 1
+	thresh: 1
+	}
+]

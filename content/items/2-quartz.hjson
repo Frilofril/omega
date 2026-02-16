@@ -1,0 +1,13 @@
+type: item
+name: Quartz
+description: A mineral that does not react with acid and can be used as a glass for liquid structures, or as an auxiliary material
+color: 95bbd0
+hardness: 1
+cost: 1
+charge: 0.05
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 1-gold
+

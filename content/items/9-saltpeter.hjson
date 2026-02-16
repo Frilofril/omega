@@ -1,0 +1,13 @@
+type: item
+name: Saltpeter
+description: Explosive
+color: e39257
+hardness: 5
+explosiveness: 1
+cost: 1
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 8-sulfur
+

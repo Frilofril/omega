@@ -1,0 +1,72 @@
+type: flying
+name: Knight
+description: Flying drone that shoots lasers
+health: 158
+speed: 0.9
+accel: 1
+drag: 0.15
+hitSize: 10
+rotateSpeed: 4.5
+flying: true
+faceTarget: true
+//research: 96-pawn
+researchCostMultiplier: 10
+weapons: [ {
+x: 0
+y: 0
+rotate: false
+mirror: false
+inaccuracy: 0
+reload: 90
+shootSound: starShoot
+shootStatus: unmoving
+shootStatusDuration: 25
+chargeSound: starCharge
+shoot: {
+	firstShotDelay: 20
+	shots: 1
+	shotDelay: 90
+	autoTarget: true
+	}
+bullet: { 
+	type: LaserBulletType
+	damage: 32
+	lifeTime: 200
+	colors: [bf92f9, 8e7cd0, 665c9f]
+	sideLength: 40
+	sideAngle: 45
+	length: 70
+chargeEffect: {
+	type: MultiEffect
+	effects:[
+	{
+	type: WaveEffect
+	colorFrom: bf92f9
+	colorTo: 665c9f
+	lightColor: bf92f9
+	sizeFrom: 10
+	sizeTo: 0
+	layer: 150
+	lifetime: 20
+	}
+	{
+	type: WaveEffect
+	colorFrom: bf92f9
+	colorTo: 665c9f
+	lightColor: bf92f9
+	sizeFrom: 12
+	sizeTo: 0
+	layer: 150
+	lifetime: 10
+	}
+	]
+	}
+	}
+}
+]
+
+abilities: [
+	]
+
+immunities: [
+	]

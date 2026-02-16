@@ -1,0 +1,82 @@
+type: mech
+name: Warrior
+description: Small fast robot shooting a bullet with a robot of the Quark type
+health: 115
+speed: 1.35
+hitSize: 5
+flying: false
+faceTarget: true
+research: {
+parent: z2-basic-station-units
+objectives: [
+8-sulfur
+]
+}
+researchCostMultiplier: 10
+weapons: [ {
+x: 0
+y: 1
+rotate: false
+mirror: false
+inaccuracy: 0
+reload: 100
+shootSound: littlyLittle
+shootOnDeath: true
+shoot: {
+	shots: 1
+	shotDelay: 0
+	autoTarget: true
+	}
+bullet: { 
+	type: BasicBulletType
+	damage: 50
+	speed: 2
+	pierce: true
+	pierceBuildings: true
+	killShooter: true
+	delayFrags: true
+	hitSound: littlyLittle
+	despawnSound: littlyLittle
+	fragSpread: 0
+	fragBullets: 1
+	fragOffsetMax: 1
+	fragVelocityMin: 1
+	fragVelocityMax: 1
+	fragRandomSpread: 0
+	fragBullet: {
+		spawnUnit: "1-quark"
+		}
+
+	width: 7.5
+	height: 14
+	sprite: circle
+	trailEffect: artilleryTrail
+	trailInterval: 3.5
+	trailColor: ff6565
+	frontColor: e35f5f
+	despawnEffect: {
+		type: MultiEffect
+		effects:[
+			{
+			type: ExplosionEffect
+			waveLife: 12
+			waveStroke: 1
+			waveRadBase: 0
+			waveRad: 5
+			waveColor: e35f5f
+			smokes: 0
+			sparkLen: 1.5
+			sparkStroke: 2
+			sparkColor: e35f5f
+			}
+			]
+	}
+	} 
+}
+]
+
+abilities: [
+	]
+
+immunities: [
+	]
