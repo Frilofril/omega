@@ -16,9 +16,10 @@ The mod is still in development, so everything can still change
 During testing on version 155.3, an issue occurred with the planet’s broken atmosphere color. Please ignore it or disable the atmosphere rendering. This is a bug in the game version itself and is almost impossible to fix"
 version: "Pre-Demo 0.1.1/5"
 subtitle: ""
-minGameVersion: "146"
+minGameVersion: "154"
 dependencies: [ ]
 hidden: false
 
 hideBrowser: false
+
 
