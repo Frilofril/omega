@@ -11,15 +11,15 @@ squareSprite: false
 hasPower: false
 hasitem: true
 hasliquids: false
-craftTime: 200
+craftTime: 100
 consumes: {
 items: [
-3-sulfat/2
+3-sulfat/4
 ]
 }
 updateEffect: smeltsmoke
 ambientSound: factory-light
-ambientSoundVolume: 0.5
+ambientSoundVolume: 0.2
 itemCapacity: 6
 outputItem: 4-lithium/3
 category: crafting

@@ -15,16 +15,16 @@ hasliquids: false
 craftTime: 200
 consumes: {
 items: [
-2-quartz/5
-4-lithium/3
+2-quartz/4
+4-lithium/1
 ]
 power: 2.5
 }
 updateEffect: pulverizeSmall 
 ambientSound: factory-patern
-ambientSoundVolume: 0.5
+ambientSoundVolume: 0.2
 itemCapacity: 10
-outputItem: 5-crystallite/4
+outputItem: 5-crystallite/2
 category: crafting
 research: {
 parent: c2-lithium-fabric

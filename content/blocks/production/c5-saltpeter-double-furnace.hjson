@@ -27,7 +27,7 @@ power: 3
 }
 updateEffect: steam  
 ambientSound: factory-wind
-ambientSoundVolume: 0.5
+ambientSoundVolume: 0.2
 itemCapacity: 6
 liquidCapacity: 10
 outputItem: 9-saltpeter/1

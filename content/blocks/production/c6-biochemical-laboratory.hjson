@@ -17,11 +17,11 @@ hasliquids: true
 craftTime: 50
 consumes: {
 liquids: [
-2-acid/0.25
+2-acid/0.5
 3-air-component/0.15
 ]
 items: [
-7-diamond/5
+7-diamond/3
 8-sulfur/2
 ]
 power: 0.75

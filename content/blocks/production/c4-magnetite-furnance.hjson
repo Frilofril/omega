@@ -12,10 +12,10 @@ squareSprite: false
 hasPower: false
 hasitem: true
 hasliquids: true
-craftTime: 150
+craftTime: 125
 consumes: {
 liquids: [
-2-acid/0.75
+2-acid/1
 ]
 items: [
 1-gold/1
@@ -23,10 +23,10 @@ items: [
 }
 updateEffect: pulverize 
 ambientSound: factory-wind
-ambientSoundVolume: 0.5
+ambientSoundVolume: 0.2
 itemCapacity: 4
 liquidCapacity: 10
-outputItem: 6-magnetite/2
+outputItem: 6-magnetite/1
 category: crafting
 research: {
 parent: c1-sulfat-fabric

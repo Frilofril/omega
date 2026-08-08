@@ -20,10 +20,10 @@ liquids: [
 }
 updateEffect: smeltsmoke   
 ambientSound: factory-light
-ambientSoundVolume: 0.5
+ambientSoundVolume: 0.2
 itemCapacity: 2
 liquidCapacity: 10
-outputItem: 3-sulfat/1
+outputItem: 3-sulfat/2
 category: crafting
 research: {
 parent: b1-thermal-drill

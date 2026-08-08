@@ -3,7 +3,8 @@ solarSystem: sun
 parent: sun
 icon: planet
 iconColor: 8c824d
-atmosphereColor: 5e5935
+atmosphereColor: 8B8156
+launchSchematic: w1-core
 
 itemWhitelist: [
 1-gold
