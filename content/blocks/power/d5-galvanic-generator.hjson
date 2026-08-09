@@ -16,11 +16,11 @@ outputsPower: true
 itemCapacity: 8
 consumes: {
 items: [
-6-magnetite/4
+6-magnetite/2
 ]
 
 }
-itemDuration: 150
+itemDuration: 125
 powerProduction: 1.5
 category: power
 generateEffect: reactorsmoke
