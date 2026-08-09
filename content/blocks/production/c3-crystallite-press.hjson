@@ -24,7 +24,7 @@ updateEffect: pulverizeSmall
 ambientSound: factory-patern
 ambientSoundVolume: 0.2
 itemCapacity: 10
-outputItem: 5-crystallite/2
+outputItem: 5-crystallite/4
 category: crafting
 research: {
 parent: c2-lithium-fabric
