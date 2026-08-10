@@ -25,4 +25,4 @@ Resource distribution is generally borrowed from Serpulo, but without a sorter. 
 ### Logs and Records
 ![flagImg](sprites/blocks/special/1-aic-report.png)
 
-Story notes and commentary appear in the technology tree during gameplay. They set the tone and gradually раскрывают the story and lore.
+Story notes and commentary appear in the technology tree during gameplay. They set the tone and gradually reveal the story and lore.
