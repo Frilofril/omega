@@ -6,7 +6,12 @@ speed: 0.8
 hitSize: 10
 flying: false
 faceTarget: true
-//research: 1-quark
+research: {
+parent: 1-quark
+objectives: [
+z3-upgraded-station-units
+]
+}
 researchCostMultiplier: 10
 weapons: [{
 x: 0

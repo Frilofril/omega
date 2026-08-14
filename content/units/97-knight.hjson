@@ -9,7 +9,12 @@ hitSize: 10
 rotateSpeed: 4.5
 flying: true
 faceTarget: true
-//research: 96-pawn
+research: {
+parent: 96-pawn
+objectives: [
+z3-upgraded-station-units
+]
+}
 researchCostMultiplier: 10
 weapons: [ {
 x: 0

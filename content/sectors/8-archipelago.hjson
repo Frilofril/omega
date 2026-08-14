@@ -1,0 +1,15 @@
+//captureWave: 26
+difficulty: 7
+alwaysUnlocked: false
+planet: omega
+sector: 15
+
+research: {
+parent: 6-stone-deltas
+objectives: [
+{
+type: SectorComplete
+preset: 6-stone-deltas
+}
+]
+}

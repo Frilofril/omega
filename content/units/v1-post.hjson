@@ -11,8 +11,15 @@ flying: true
 faceTarget: true
 hitSize: 5
 buildSpeed: 5
-research: z7-auxiliary-unit-station
-researchCost: [ ]
+research: {
+parent: z2-basic-station-units
+objectives: [
+{
+type: SectorComplete
+preset: 3-station-desert
+}
+]
+}
 
 weapons: [ {
 x: 0

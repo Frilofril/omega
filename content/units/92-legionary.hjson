@@ -6,7 +6,12 @@ speed: 1.45
 hitSize: 10
 flying: false
 faceTarget: true
-//research: 91-warnior
+research: {
+parent: 91-warnior
+objectives: [
+z3-upgraded-station-units
+]
+}
 researchCostMultiplier: 10
 weapons: [ {
 name: "92-legionary-weapon"

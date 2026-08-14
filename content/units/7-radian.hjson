@@ -8,7 +8,12 @@ flying: false
 faceTarget: true
 legCount: 8
 legLength: 15
-//research: 6-vector
+research: {
+parent: 6-vector
+objectives: [
+z3-upgraded-station-units
+]
+}
 researchCostMultiplier: 10
 weapons: [{
 x: 0
