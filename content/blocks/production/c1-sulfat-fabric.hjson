@@ -22,7 +22,7 @@ updateEffect: smeltsmoke
 ambientSound: factory-light
 ambientSoundVolume: 0.2
 itemCapacity: 2
-liquidCapacity: 10
+liquidCapacity: 30
 outputItem: 3-sulfat/2
 category: crafting
 research: {

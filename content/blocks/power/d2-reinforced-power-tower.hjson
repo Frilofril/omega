@@ -1,0 +1,21 @@
+type: PowerNode
+name: Reinforced power tower
+description: Transmits energy over distances
+health: 110
+size: 2
+squareSprite: false
+research: d1-power-tower
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/40
+6-magnetite/30
+91-gallium/15
+]
+laserRange: 15
+maxNodes: 1
+autolink: True
+hasPower: true
+laserScale: 0.5
+laserColor1: ffffff
+laserColor2: de9458
+category: power

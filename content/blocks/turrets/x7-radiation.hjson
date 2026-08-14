@@ -1,0 +1,87 @@
+type: PowerTurret
+name: Radiation
+description: Universal electric turret firing short laser bursts.
+health: 160
+size: 2
+research: x2-ion
+researchCostMultiplier: 0.5
+requirements:[
+1-gold/120
+4-lithium/90
+6-magnetite/150
+5-crystallite/110
+91-gallium/100
+]
+itemCapacity: 1
+liquidCapacity: 1
+category: turret
+
+coolant: {
+type: ConsumeCoolant
+allowLiquid: true
+amount: 0.1
+}
+
+consumes: {
+power: 6
+}
+
+shootY: 3
+targetAir: true
+targetGround: true
+reload: 130
+range: 150
+rotateSpeed: 6
+inaccuracy: 2
+shootSound: starShoot
+chargeSound: starCharge
+shoot: {
+	firstShotDelay: 20
+	shots: 1
+	shotDelay: 0
+	autoTarget: true
+}
+shootType: {
+	type: LaserBulletType
+	damage: 65
+	lifeTime: 450
+	ammoMultiplier: 1.0
+	colors: [FFFFFF, DBDBDB, DBDBDB]
+	sideLength: 40
+	sideAngle: 45
+	length: 150
+	width: 30
+	lengthFalloff: 0.1
+	largeHit: true
+
+	chargeEffect: {
+		type: MultiEffect
+		effects:[
+			{
+			type: WaveEffect
+			colorFrom: DBDBDB
+			colorTo: DBDBDB
+			lightColor: FFFFFF
+			sizeFrom: 10
+			sizeTo: 0
+			layer: 150
+			lifetime: 20
+			}
+			{
+			type: WaveEffect
+			colorFrom: DBDBDB
+			colorTo: DBDBDB
+			lightColor: FFFFFF
+			sizeFrom: 12
+			sizeTo: 0
+			layer: 150
+			lifetime: 10
+			}
+		]
+		}
+}
+
+drawer: {
+type: DrawTurret
+basePrefix: regul-
+}

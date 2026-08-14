@@ -29,7 +29,7 @@ updateEffect: steam
 ambientSound: factory-wind
 ambientSoundVolume: 0.2
 itemCapacity: 6
-liquidCapacity: 10
+liquidCapacity: 60
 outputItem: 9-saltpeter/1
 category: crafting
 research: {

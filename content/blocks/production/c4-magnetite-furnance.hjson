@@ -25,7 +25,7 @@ updateEffect: pulverize
 ambientSound: factory-wind
 ambientSoundVolume: 0.2
 itemCapacity: 4
-liquidCapacity: 10
+liquidCapacity: 120
 outputItem: 6-magnetite/1
 category: crafting
 research: {

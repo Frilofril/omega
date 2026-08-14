@@ -13,7 +13,7 @@ requirements:[
 ]
 squareSprite: false
 hasPower: false
-hasitem: true
+hasitem: false
 hasliquids: true
 craftTime: 50
 consumes: {
@@ -24,6 +24,7 @@ ambientSound: factory-wind
 ambientSoundVolume: 0.5
 ignoreLiquidFullness: true
 liquidCapacity: 12
+itemCapacity: 0
 outputLiquid: 3-air-component/0.2
 category: production
 research: b2-reinforced-thermal-drill

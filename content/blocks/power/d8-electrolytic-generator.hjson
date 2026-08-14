@@ -1,0 +1,55 @@
+type: ConsumeGenerator
+name: Electrolytic generator
+description: It utilizes the acid's internal electrochemical reactions to generate energy.
+health: 170
+size: 2
+squareSprite: false
+research: d6-piezoelectric-generator
+researchCostMultiplier: 0.5
+requirements: [
+1-gold/60
+2-quartz/120
+6-magnetite/75
+91-gallium/35
+]
+hasPower: true
+hasItems: false
+hasLiquids: true
+outputsPower: true
+itemCapacity: 0
+liquidCapacity: 60
+consumes: {
+liquids: [
+2-acid/1
+]
+}
+//itemDuration: 50
+powerProduction: 1.25
+category: power
+//generateEffect: reactorsmoke
+ambientSound: factory-light
+ambientSoundVolume: 0.5
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawRegion
+suffix: -top
+layer: 53
+}
+{
+type: DrawLiquidRegion
+drawLiquid: 2-acid
+}
+{
+type: DrawCultivator
+plantColor: 24d9a3
+plantColorLight: 80ffbf
+bottomColor: 0cb392
+}
+]
+}

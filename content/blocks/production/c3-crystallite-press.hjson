@@ -6,7 +6,7 @@ size: 3
 researchCostMultiplier: 0.25
 requirements:[
 1-gold/252
-4-lithium/200
+6-magnetite/150
 ]
 squareSprite: false
 hasPower: true
@@ -23,7 +23,7 @@ power: 2.5
 updateEffect: pulverizeSmall 
 ambientSound: factory-patern
 ambientSoundVolume: 0.2
-itemCapacity: 10
+itemCapacity: 8
 outputItem: 5-crystallite/4
 category: crafting
 research: {
@@ -33,6 +33,7 @@ objectives: [
 type: OnSector
 preset: 2-lost-career
 }
+d1-power-tower
 ]
 }
 

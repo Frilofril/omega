@@ -48,5 +48,13 @@ plans: [
 		]
 	time: 700
 	}
+	{
+	unit: v1-post
+	requirements: [
+		7-diamond/22
+		5-crystallite/23
+		]
+	time: 800
+	}
 ]
 category: units

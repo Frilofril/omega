@@ -19,6 +19,8 @@ booster: true
 optional: true
 }
 }
+liquidCapacity: 6
+itemCapacity: 0
 range: 60
 phaseRangeBoost: 75
 healPercent: 1.0

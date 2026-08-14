@@ -3,7 +3,12 @@ name: Ion
 description: Shoots lightning bolts in a small radius
 health: 140
 size: 2
-research: x1-quantum
+research: {
+parent: x1-quantum
+objectives: [
+d3-lithium-battery
+]
+}
 researchCostMultiplier: 0.5
 requirements:[
 1-gold/81

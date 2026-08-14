@@ -30,7 +30,7 @@ updateEffect: greenCloud
 //ambientSound: factory-wind
 ambientSoundVolume: 0.0
 itemCapacity: 12
-liquidCapacity: 10
+liquidCapacity: 60
 outputItem: 90-biomaterial/12
 category: crafting
 research: {

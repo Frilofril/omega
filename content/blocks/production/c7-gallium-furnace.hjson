@@ -1,0 +1,63 @@
+type: GenericCrafter
+name: Gallium furnace
+description: It converts heterogeneous magnetite into gallium through thermal treatment and chemical gas interactions.
+health: 350
+size: 3
+researchCostMultiplier: 0.25
+requirements:[
+1-gold/260
+2-quartz/90
+5-crystallite/130
+6-magnetite/120
+]
+squareSprite: false
+hasPower: true
+hasitem: true
+hasliquids: true
+craftTime: 250
+consumes: {
+items: [
+6-magnetite/4
+8-sulfur/3
+]
+liquids: [
+1-mercury/0.5
+]
+power: 2
+}
+updateEffect: pulverizeSmall 
+ambientSound: factory-patern
+ambientSoundVolume: 0.2
+itemCapacity: 8
+liquidCapacity: 60
+outputItem: 91-gallium/4
+category: crafting
+research: {
+parent: c3-crystallite-press
+objectives: [
+{
+type: OnSector
+preset: 8-archipelago
+}
+]
+}
+
+drawer: {
+type: DrawMulti
+drawers: [
+{
+type: DrawDefault
+}
+{
+type: DrawGlowRegion
+suffix: -glow
+color: f8c166
+}
+{
+type: DrawFlame
+}
+{
+type: DrawCrucibleFlame
+}
+]
+}

@@ -1,0 +1,30 @@
+type: Reconstructor
+name: Upgraded station units
+description: "Upgrades units to Tier 2"
+health: 370
+size: 3
+squareSprite: false
+research: z2-basic-station-units
+researchCostMultiplier: 0.25
+requirements: [
+1-gold/230
+4-lithium/135
+5-crystallite/230
+6-magnetite/200
+91-gallium/100
+]
+consumes: {
+items:[
+5-crystallite/45
+91-gallium/20
+]
+power: 5
+}
+constructTime: 850
+upgrades: [
+[1-quark, 2-photon], 
+[6-vector, 7-radian],
+[91-warnior, 92-legionary],
+[96-pawn, 97-knight]
+]
+category: units

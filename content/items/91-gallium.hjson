@@ -1,0 +1,13 @@
+type: item
+name: Gallium
+description: Metal serves as an excellent material and semiconductor in electronics under the conditions of this planet
+color: d2cda9
+hardness: 2
+cost: 2
+charge: 0.35
+hiddenOnPlanets: [
+serpulo
+erekir
+]
+research: 6-magnetite
+

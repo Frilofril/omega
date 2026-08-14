@@ -1,0 +1,39 @@
+type: NuclearReactor
+name: Galvanic reactor
+description: Generates energy via a galvanic cell and its high-temperature reactions. Requires cooling.
+health: 310
+size: 3
+squareSprite: false
+research: d8-electrolytic-generator
+researchCostMultiplier: 0.5
+requirements: [
+1-gold/150
+2-quartz/125
+6-magnetite/115
+5-crystallite/130
+91-gallium/160
+]
+hasPower: true
+hasItems: true
+hasLiquid: true
+outputsPower: true
+itemCapacity: 4
+liquidCapacity: 75
+consumes: {
+items: [
+91-gallium/2
+]
+liquids: [
+1-mercury/1.25
+]
+}
+fuelItem: 91-gallium
+itemDuration: 250
+powerProduction: 3.25
+category: power
+generateEffect: reactorsmoke
+ambientSound: factory-wind
+ambientSoundVolume: 0.5
+
+explosionPuddleLiquid: 1-mercury
+explodeEffect: scatheExplosion 
