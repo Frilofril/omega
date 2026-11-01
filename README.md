@@ -2,9 +2,6 @@
 is a large mod that adds a new planet with a full campaign, complete with its own extensive story and lore. The planet’s mechanics are connected to the standard mechanics of Serpulo — focusing on proper resource distribution and maximizing conveyor efficiency.
 The overall goal of almost every sector is to capture the enemy base using your own units, sabotage tactics, and the gradual destruction of the enemy base’s systems. During gameplay, you will discover records and logs that reveal the story. Pay close attention to your surroundings and to the story-driven sectors themselves.
 
-## Cobatstry?
-I am also the author of Cobatstry, but I lost access to my account and can no longer update the mod. Many resources and even more sprites were transferred and reused in this project, but that is not a bad thing — focus on the new content, as this is a separate mod. In the story, Cobatstry can be considered the distant past.
-
 ## Mechanics and Features:
 
 ### Flags 
