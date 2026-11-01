@@ -23,3 +23,8 @@ Resource distribution is generally borrowed from Serpulo, but without a sorter. 
 ![flagImg](sprites/blocks/special/1-aic-report.png)
 
 Story notes and commentary appear in the technology tree during gameplay. They set the tone and gradually reveal the story and lore.
+
+## Technical Implementation
+- Architecture: Data-Driven Design using JSON configuration schemas.
+- Systems Designed: Custom planet generation, named story sector progression, asymmetric unit/turret balance, custom technology tree with integrated narrative logs, and custom sprite/audio asset pipelines.
+- Installation: Import directly via the in-game Mindustry Mod Browser (`FriloFril/omega`) or clone into the local `mods/` directory.
